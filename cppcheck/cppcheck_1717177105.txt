@@ -1,0 +1,75 @@
+../08-mainant/src/FunctionWindow.cpp:190:24: style: Variable 'retVal' is assigned a value that is never used. [unreadVariable]
+        QString retVal = this->func->getRetVal();
+                       ^
+../08-mainant/src/Output.cpp:27:27: style: Clarify calculation precedence for '&' and '?'. [clarifyCalculation]
+        addr[i]=(x & mask ? '1' : '0');
+                          ^
+../08-mainant/headers/Parser.h:90:10: style: Unused private function: 'Parser::vistiBinaryNode' [unusedPrivateFunction]
+    void vistiBinaryNode(Node* node, QVector<Node*> parents, std::ofstream& out);
+         ^
+../08-mainant/src/Parser.cpp:360:5: performance: Variable 'headers' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    headers = "";
+    ^
+../08-mainant/src/Parser.cpp:143:12: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+       len = len-1;
+           ^
+../08-mainant/src/Parser.cpp:193:12: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+       len = len-1;
+           ^
+../08-mainant/src/Parser.cpp:243:12: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+       len = len-1;
+           ^
+../08-mainant/headers/nodesHeaders/ClassInstanceNode.h:14:25: warning: The class 'ClassInstanceNode' defines member variable with name 'inputTypes' also defined in its parent class 'Node'. [duplInheritedMember]
+    QMap<QString,QChar> inputTypes;
+                        ^
+../08-mainant/headers/Node.h:38:20: note: Parent variable 'Node::inputTypes'
+    QVector<QChar> inputTypes;
+                   ^
+../08-mainant/headers/nodesHeaders/ClassInstanceNode.h:14:25: note: Derived variable 'ClassInstanceNode::inputTypes'
+    QMap<QString,QChar> inputTypes;
+                        ^
+../08-mainant/headers/nodesHeaders/FuncReferenceNode.h:11:25: warning: The class 'FuncReferenceNode' defines member variable with name 'inputTypes' also defined in its parent class 'Node'. [duplInheritedMember]
+    QMap<QString,QChar> inputTypes;
+                        ^
+../08-mainant/headers/Node.h:38:20: note: Parent variable 'Node::inputTypes'
+    QVector<QChar> inputTypes;
+                   ^
+../08-mainant/headers/nodesHeaders/FuncReferenceNode.h:11:25: note: Derived variable 'FuncReferenceNode::inputTypes'
+    QMap<QString,QChar> inputTypes;
+                        ^
+../08-mainant/src/nodes/FunctionReturnNode.cpp:108:17: style: Local variable 'text' shadows outer variable [shadowVariable]
+        QString text = "return ";
+                ^
+../08-mainant/src/nodes/FunctionReturnNode.cpp:102:13: note: Shadowed declaration
+    QString text = "";
+            ^
+../08-mainant/src/nodes/FunctionReturnNode.cpp:108:17: note: Shadow variable
+        QString text = "return ";
+                ^
+../08-mainant/headers/nodesHeaders/MapNode.h:19:5: style: Class 'MapNode' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    MapNode(QVector<QString>& _inicializedClases);
+    ^
+../08-mainant/src/nodes/MapNode.cpp:3:36: style: Parameter '_inicializedClases' can be declared with const [constParameter]
+MapNode::MapNode(QVector<QString>& _inicializedClases) : Node("map", 1, 1)
+                                   ^
+../08-mainant/headers/nodesHeaders/ReferenceNode.h:11:5: style: Class 'ReferenceNode' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    ReferenceNode(QString name);
+    ^
+../08-mainant/src/Parser.cpp:424:0: style: The function 'eraseStartNode' is never used. [unusedFunction]
+
+^
+../08-mainant/src/Parser.cpp:414:0: style: The function 'getGraph' is never used. [unusedFunction]
+
+^
+../08-mainant/src/Parser.cpp:409:0: style: The function 'getNodeNames' is never used. [unusedFunction]
+
+^
+../08-mainant/src/Parser.cpp:419:0: style: The function 'getStartNodes' is never used. [unusedFunction]
+
+^
+../08-mainant/src/Parser.cpp:448:0: style: The function 'removeNode' is never used. [unusedFunction]
+
+^
+../08-mainant/src/Parser.cpp:266:0: style: The function 'vistiBinaryNode' is never used. [unusedFunction]
+
+^

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.90"/>
+    <errors>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;retVal&apos; is assigned a value that is never used." verbose="Variable &apos;retVal&apos; is assigned a value that is never used." cwe="563">
+            <location file="../08-mainant/src/FunctionWindow.cpp" line="190" column="24"/>
+            <symbol>retVal</symbol>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;&amp;&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a&amp;b?c:d&apos;&apos; should be written as either &apos;&apos;(a&amp;b)?c:d&apos;&apos; or &apos;&apos;a&amp;(b?c:d)&apos;&apos;." cwe="783">
+            <location file="../08-mainant/src/Output.cpp" line="27" column="27"/>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;Parser::vistiBinaryNode&apos;" verbose="Unused private function: &apos;Parser::vistiBinaryNode&apos;" cwe="398">
+            <location file0="../08-mainant/src/Parser.cpp" file="../08-mainant/headers/Parser.h" line="90" column="10"/>
+            <symbol>Parser::vistiBinaryNode</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;headers&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;headers&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file="../08-mainant/src/Parser.cpp" line="360" column="5"/>
+            <symbol>headers</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;len&apos; is assigned a value that is never used." verbose="Variable &apos;len&apos; is assigned a value that is never used." cwe="563">
+            <location file="../08-mainant/src/Parser.cpp" line="143" column="12"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;len&apos; is assigned a value that is never used." verbose="Variable &apos;len&apos; is assigned a value that is never used." cwe="563">
+            <location file="../08-mainant/src/Parser.cpp" line="193" column="12"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;len&apos; is assigned a value that is never used." verbose="Variable &apos;len&apos; is assigned a value that is never used." cwe="563">
+            <location file="../08-mainant/src/Parser.cpp" line="243" column="12"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;ClassInstanceNode&apos; defines member variable with name &apos;inputTypes&apos; also defined in its parent class &apos;Node&apos;." verbose="The class &apos;ClassInstanceNode&apos; defines member variable with name &apos;inputTypes&apos; also defined in its parent class &apos;Node&apos;." cwe="398">
+            <location file0="../08-mainant/src/nodes/ClassInstanceNode.cpp" file="../08-mainant/headers/nodesHeaders/ClassInstanceNode.h" line="14" column="25" info="Derived variable &apos;ClassInstanceNode::inputTypes&apos;"/>
+            <location file0="../08-mainant/src/nodes/ClassInstanceNode.cpp" file="../08-mainant/headers/Node.h" line="38" column="20" info="Parent variable &apos;Node::inputTypes&apos;"/>
+            <symbol>ClassInstanceNode</symbol>
+            <symbol>inputTypes</symbol>
+            <symbol>Node</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;FuncReferenceNode&apos; defines member variable with name &apos;inputTypes&apos; also defined in its parent class &apos;Node&apos;." verbose="The class &apos;FuncReferenceNode&apos; defines member variable with name &apos;inputTypes&apos; also defined in its parent class &apos;Node&apos;." cwe="398">
+            <location file0="../08-mainant/src/nodes/FuncReferenceNode.cpp" file="../08-mainant/headers/nodesHeaders/FuncReferenceNode.h" line="11" column="25" info="Derived variable &apos;FuncReferenceNode::inputTypes&apos;"/>
+            <location file0="../08-mainant/src/nodes/FuncReferenceNode.cpp" file="../08-mainant/headers/Node.h" line="38" column="20" info="Parent variable &apos;Node::inputTypes&apos;"/>
+            <symbol>FuncReferenceNode</symbol>
+            <symbol>inputTypes</symbol>
+            <symbol>Node</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;text&apos; shadows outer variable" verbose="Local variable &apos;text&apos; shadows outer variable" cwe="398">
+            <location file="../08-mainant/src/nodes/FunctionReturnNode.cpp" line="108" column="17" info="Shadow variable"/>
+            <location file="../08-mainant/src/nodes/FunctionReturnNode.cpp" line="102" column="13" info="Shadowed declaration"/>
+            <symbol>text</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MapNode&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MapNode&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../08-mainant/src/nodes/MapNode.cpp" file="../08-mainant/headers/nodesHeaders/MapNode.h" line="19" column="5"/>
+            <symbol>MapNode</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;_inicializedClases&apos; can be declared with const" verbose="Parameter &apos;_inicializedClases&apos; can be declared with const" cwe="398">
+            <location file="../08-mainant/src/nodes/MapNode.cpp" line="3" column="36"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ReferenceNode&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ReferenceNode&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../08-mainant/src/nodes/ReferenceNode.cpp" file="../08-mainant/headers/nodesHeaders/ReferenceNode.h" line="11" column="5"/>
+            <symbol>ReferenceNode</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;eraseStartNode&apos; is never used." verbose="The function &apos;eraseStartNode&apos; is never used." cwe="561">
+            <location file="../08-mainant/src/Parser.cpp" line="424" column="0"/>
+            <symbol>eraseStartNode</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;getGraph&apos; is never used." verbose="The function &apos;getGraph&apos; is never used." cwe="561">
+            <location file="../08-mainant/src/Parser.cpp" line="414" column="0"/>
+            <symbol>getGraph</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;getNodeNames&apos; is never used." verbose="The function &apos;getNodeNames&apos; is never used." cwe="561">
+            <location file="../08-mainant/src/Parser.cpp" line="409" column="0"/>
+            <symbol>getNodeNames</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;getStartNodes&apos; is never used." verbose="The function &apos;getStartNodes&apos; is never used." cwe="561">
+            <location file="../08-mainant/src/Parser.cpp" line="419" column="0"/>
+            <symbol>getStartNodes</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;removeNode&apos; is never used." verbose="The function &apos;removeNode&apos; is never used." cwe="561">
+            <location file="../08-mainant/src/Parser.cpp" line="448" column="0"/>
+            <symbol>removeNode</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;vistiBinaryNode&apos; is never used." verbose="The function &apos;vistiBinaryNode&apos; is never used." cwe="561">
+            <location file="../08-mainant/src/Parser.cpp" line="266" column="0"/>
+            <symbol>vistiBinaryNode</symbol>
+        </error>
+    </errors>
+</results>

@@ -3,7 +3,7 @@
 GitHub repozitorijum posvećen izradi samostalnog praktičnog seminarskog rada za potrebe kursa Verifikacija softvera na master studijama Matematičkog fakulteta u Beogradu.
 Praktični seminarski rad podrazumeva primenu alata za statičku i dinamičku verifikaciju softvera na izabranom studentskom projektu. 
 
-**Autor: Milica Kostadinović**
+**Autor: Milica Kostadinović 1049/2023**
 
 ## Opis analiziranog projekta
 **MainAnt** je aplikacija koja korisniku omoguca da pomocu elemenata scene, koje nazivamo cvorovi, kreira drvoliku strukturku koja se prevodi u odgovarajuci c++ kod.Program cine:

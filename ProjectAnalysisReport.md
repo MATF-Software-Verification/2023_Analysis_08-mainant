@@ -2,15 +2,14 @@
 
 Korišćeni alati:
 - [Cppcheck](#cppcheck)
+- [ClangFormat](#clang_format)
 - [Valgrind](#valgrind)
 	- [Memcheck](#memcheck)
 	- [Callgrind](#callgrind)
  - [Flawfinder](#flawfinder)
- - [ClangFormat](#clang_format)
 
 ## Cppcheck
-Cppcheck je alat za statičku analizu C i C++ koda, čija je primarna svrha pronalaženje potencijalnih problema pre izvršavanja programa. Pruža programerima informacije o kvalitetu njihovog koda, olakšavajući proces poboljšanja. Ovaj alat je posebno koristan za otkrivanje curenja memorije, identifikaciju neinicijalizovanih promenljivih, pronalaženje potencijalnih problema sa poka-
-zivačima, te pomaže u održavanju konzistentnosti koda.
+Cppcheck je alat za statičku analizu C i C++ koda, čija je primarna svrha pronalaženje potencijalnih problema pre izvršavanja programa. Pruža programerima informacije o kvalitetu njihovog koda, olakšavajući proces poboljšanja. Ovaj alat je posebno koristan za otkrivanje curenja memorije, identifikaciju neinicijalizovanih promenljivih, pronalaženje potencijalnih problema sa pokazivačima, te pomaže u održavanju konzistentnosti koda.
 
 ### Postupak analize
 Za cppcheck analizu korišćen je terminal a koraci pokretanja alata opisani u okviru [README.md](cppcheck/README.md).
@@ -86,4 +85,4 @@ Flawfinder je alat za statičku analizu koda koji se koristi za otkrivanje poten
 napisanog u programskom jeziku C i C++. Ovaj alat skenira izvorni kod i identifikuje delove koda koji bi mogli predstavljati sigurnosne ranjivosti, kao što su upotreba funkcija koje su poznate po svojoj ranjivosti ili nedovoljnoj validaciji korisničkih unosa. Flawfinder se zasniva na pretragama baze podataka poznatih sigurnosnih propusta i koristi liste poznatih ranjivosti kako bi identifikovao potencijalne probleme u kodu
 .
 Alat Flawfinder pokretan je iz terminala prateći postupak pokretanja iz [README.md](flawfinder/README.md).
-detaljnije informacije o samoj greˇsci.
+detaljnije informacije o samoj grešci.

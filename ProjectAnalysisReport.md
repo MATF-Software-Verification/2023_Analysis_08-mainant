@@ -6,6 +6,7 @@ Korišćeni alati:
 	- [Memcheck](#memcheck)
 	- [Callgrind](#callgrind)
  - [Flawfinder](#flawfinder)
+ - [ClangFormat](#clang_format)
 
 ## Cppcheck
 Cppcheck je alat za statičku analizu C i C++ koda, čija je primarna svrha pronalaženje potencijalnih problema pre izvršavanja programa. Pruža programerima informacije o kvalitetu njihovog koda, olakšavajući proces poboljšanja. Ovaj alat je posebno koristan za otkrivanje curenja memorije, identifikaciju neinicijalizovanih promenljivih, pronalaženje potencijalnih problema sa poka-

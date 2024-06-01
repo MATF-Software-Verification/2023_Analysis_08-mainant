@@ -67,7 +67,7 @@ pozivima.
 ## Callgrind
 Callgrind je alat za profajliranje performansi u programiranju. On se koristi za merenje performansi programa tako što prati broj izvršenih instrukcija, keš pristupa, grananja, kao i druge metrike izvršavanja programa. Callgrind generiše detaljan izveštaj o korišćenju resursa tokom izvršavanja programa, omogućavajući programerima da identifikuju delove koda gde se troše najviše resursa, kao i da pronađu potencijalne tačke za optimizaciju. 
 
-Callgrind sam koristila preko terminala prateći postupak pokretanja iz [README.md](cppcheck/README.md).
+Callgrind sam koristila preko terminala prateći postupak pokretanja iz [README.md](callgrind/README.md).
 
 Za tumačenje izveštaja nam služi pomoćni alat `KCachegrind` koji reprezentuje izveštaj u vizuelnom i interaktivnom formatu. 
 
@@ -78,3 +78,10 @@ i broju instrukcija koje je zahtevalo njeno izvršavanje, samostalno i uključuj
 strani možemo izabrati opciju `All Callers` i videćemo koje sve funkcije su pozivale funkciju koja nas zanima. Takodje na dnu sa desne
 strane vidimo i graf poziva funkcije koji se dobija odabirom opcije `Call Graph`.
 Na osnovu analize datog izveštaja, stiče se utisak da nema velikog broja poziva funkcija u delu koji je implementiran od strane programera ovog projekta.
+
+## Flawfinder
+Flawfinder je alat za statičku analizu koda koji se koristi za otkrivanje potencijalnih sigurnosnih propusta u izvornom kodu softvera
+napisanog u programskom jeziku C i C++. Ovaj alat skenira izvorni kod i identifikuje delove koda koji bi mogli predstavljati sigurnosne ranjivosti, kao što su upotreba funkcija koje su poznate po svojoj ranjivosti ili nedovoljnoj validaciji korisničkih unosa. Flawfinder se zasniva na pretragama baze podataka poznatih sigurnosnih propusta i koristi liste poznatih ranjivosti kako bi identifikovao potencijalne probleme u kodu
+.
+Alat Flawfinder pokretan je iz terminala prateći postupak pokretanja iz [README.md](flawfinder/README.md).
+detaljnije informacije o samoj greˇsci.

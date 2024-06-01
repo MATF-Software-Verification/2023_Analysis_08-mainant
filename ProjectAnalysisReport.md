@@ -40,6 +40,7 @@ Time se dobija fajl `.clang-format` koji se može menjati komandom **vim .clang-
 napravila su sledeće:
 - IndentWidth: 2 → 4
 - TabWidth: 8 → 4
+  
 Zbog toga što ovaj alat nema opciju `run` kojom bi se odmah primenio na ceo projekat, iskoristila sam `run-clang-format.py` koja prolazi
 kroz sve fajlove .hpp i .cpp i primenljuje clang-format. Naredba koju
 sam pokretala u terminalu je sledeća: `python3 run-clang-format.py . file`.

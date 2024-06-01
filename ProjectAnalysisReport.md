@@ -83,7 +83,19 @@ Na osnovu analize datog izveštaja, stiče se utisak da nema velikog broja poziv
 
 ## Flawfinder
 Flawfinder je alat za statičku analizu koda koji se koristi za otkrivanje potencijalnih sigurnosnih propusta u izvornom kodu softvera
-napisanog u programskom jeziku C i C++. Ovaj alat skenira izvorni kod i identifikuje delove koda koji bi mogli predstavljati sigurnosne ranjivosti, kao što su upotreba funkcija koje su poznate po svojoj ranjivosti ili nedovoljnoj validaciji korisničkih unosa. Flawfinder se zasniva na pretragama baze podataka poznatih sigurnosnih propusta i koristi liste poznatih ranjivosti kako bi identifikovao potencijalne probleme u kodu
-.
+napisanog u programskom jeziku C i C++. Ovaj alat skenira izvorni kod i identifikuje delove koda koji bi mogli predstavljati sigurnosne ranjivosti, kao što su upotreba funkcija koje su poznate po svojoj ranjivosti ili nedovoljnoj validaciji korisničkih unosa. Flawfinder se zasniva na pretragama baze podataka poznatih sigurnosnih propusta i koristi liste poznatih ranjivosti kako bi identifikovao potencijalne probleme u kodu.
+
 Alat Flawfinder pokretan je iz terminala prateći postupak pokretanja iz [README.md](flawfinder/README.md).
-detaljnije informacije o samoj grešci.
+
+Rezultati pokretanja skripte:
+![](flawfinder/pictures/flaw1.png)
+![](flawfinder/pictures/flaw2.png)
+
+Neke od prijavljenih grešaka:
+1. **CWE-327**: Upozorava da program koristi neispravan ili rizičan kriptografski algoritam ili protokol. Ovo može dovesti do otkrivanja osetljivih informacija, lažiranja identitea, modifikovanja podataka i drugih neželjenih dogadaja. Analiza je ovom propustu dodelila nivo 3.
+2. **CWE-119/CWE-120**: Ova upozorenja nam skreću pažnju na to da program radi sa memorijskim baferom bez provere njegove veličine. Kao rešenje, predlaže proveru veličine bafera kako bi se izbeglo čitanje i pisanje van opsega statički alociranog bafera. Analiza je
+ovom propustu dodelila nivo 2.
+3. **CWE-362**: Upozorava da program sadrži sekvencu koja zahteva privremeni ekskluzivi pristup deljenim podacima, ali da to nije
+obezbeđeno. Analiza je ovom propustu dodelila nivo 2.
+4. **CWE-78**: Upozorava nas da je pronadena potencijalno opasna upotreba funkcije system() u izvornom kodu. Funkcija system() se ko-
+risti za izvršavanje sistemskih komandi i može biti opasna ako se koristi sa nevalidnim ili nekontrolisanim korisničkim unosima, jer može omogućiti ”OS Command Injection”napade. Umesto korišćenja funkcije system() za izvršavanje sistema komandi, preporučljivo je koristiti bibliotečke funkcije koje su dizajnirane da budu bezbednije i omogućavaju kontrolisanu manipulaciju sa sistemskim resursima. Primer toga bi bila upotreba funkcija sistema datoteka kao što su open(), read(), write(), close().

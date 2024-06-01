@@ -29,7 +29,7 @@ Takođe, vidimo da se kao upozorenje javlja postojanje konstruktora koji primaju
 ![](cppcheck/pictures/explicit_constructor.png)
 
 Često upozorenje na koja je alat Cppcheck ukazao se tiče toga da neke izvedene klase definišu promenljive sa istim imenom koje je već definisano u roditeljskoj klasi. Ovo se često naziva **shadowing** ili **senčenje** i može dovesti do konfuzije u kodu. Da bi se izbegle potencijalne greške i konfuzija, preporučuje se izbegavanje imenovanja članova sa istim imenom u izvedenim klasama kao i u njihovim roditeljskim klasama. Umesto toga, razmislite o preimenovanju članova kako bi izbegli sukobe imena i olakšali razumevanje koda.
-
+![](cppcheck/pictures/shadowing.png)
 
 ## ClangFormat
 Clang-Format je alat koji služi za automatsko oblikovanje (formatiranje) izvornog koda u C, C++ i drugim jezicima podrˇzanim od strane Clang kompajlera. Clang-Format analizira izvorni kod i primenjuje odredena pravila formatiranja kako bi ga učinio čitljivijim i doslednijim. On nam nudi više različitih stilova formatiranja. Neki od stilova su LLVM, Google, Chromium, Mozilla, WebKit, Microsoft, GNU. Može se iskoristiti bilo koji od ovih stilova, može se kreirati sopstveni stil, a može se i iskoristiti neki već postojeci kao osnova koja se menja radi kreiranja sopstvenog stila. Za pokretanje ovog alata korišćen je skript `clangf_ormat.sh`.Na slici ispod vide se sve komande koje su korišćene.

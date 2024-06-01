@@ -55,7 +55,7 @@ Alat Memcheck u okviru Valgrinda je moćan alat koji pomaže u identifikaciji cu
 Iako je moguće pokrenuti alat i iz QtCreator okruženja, Memcheck sam za analizu koristila preko terminala prateći postupak pokretanja iz [README.md](memcheck/README.md).
 
 ### Zaključci
-![](memecheck/pictures/leak_summary.png)
+![](memcheck/pictures/leak_summary.png)
 Možemo zaključiti da je relativno mali broj blokova definitivno izgubljen u poređenju sa ukupnim brojem blokova. Većina izgubljenih blokova nije povezana sa izvornim kodom programa, već dolazi iz korišćenih biblioteka.
 
 Jedini slučajevi gde imamo curenje memorije u izvornom kodu su sledeći:

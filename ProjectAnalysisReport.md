@@ -89,6 +89,7 @@ Alat Flawfinder pokretan je iz terminala prateći postupak pokretanja iz [README
 
 Rezultati pokretanja skripte:
 ![](flawfinder/pictures/flaw1.png)
+
 ![](flawfinder/pictures/flaw2.png)
 
 Neke od prijavljenih grešaka:
@@ -98,4 +99,4 @@ ovom propustu dodelila nivo 2.
 3. **CWE-362**: Upozorava da program sadrži sekvencu koja zahteva privremeni ekskluzivi pristup deljenim podacima, ali da to nije
 obezbeđeno. Analiza je ovom propustu dodelila nivo 2.
 4. **CWE-78**: Upozorava nas da je pronadena potencijalno opasna upotreba funkcije system() u izvornom kodu. Funkcija system() se ko-
-risti za izvršavanje sistemskih komandi i može biti opasna ako se koristi sa nevalidnim ili nekontrolisanim korisničkim unosima, jer može omogućiti ”OS Command Injection”napade. Umesto korišćenja funkcije system() za izvršavanje sistema komandi, preporučljivo je koristiti bibliotečke funkcije koje su dizajnirane da budu bezbednije i omogućavaju kontrolisanu manipulaciju sa sistemskim resursima. Primer toga bi bila upotreba funkcija sistema datoteka kao što su open(), read(), write(), close().
+risti za izvršavanje sistemskih komandi i može biti opasna ako se koristi sa nevalidnim ili nekontrolisanim korisničkim unosima, jer može omogućiti ”OS Command Injection” napade. Umesto korišćenja funkcije system() za izvršavanje sistema komandi, preporučljivo je koristiti bibliotečke funkcije koje su dizajnirane da budu bezbednije i omogućavaju kontrolisanu manipulaciju sa sistemskim resursima. Primer toga bi bila upotreba funkcija sistema datoteka kao što su open(), read(), write(), close().

@@ -8,15 +8,15 @@ Cppcheck je alat za statičku analizu C i C++ koda, čija je primarna svrha pron
 zivačima, te pomaže u održavanju konzistentnosti koda.
 
 ### Postupak analize
-Za cppcheck analizu korišćen je terminal a koraci pokretanja alata opisani u okviru README.md (cppcheck/README.md).
+Za cppcheck analizu korišćen je terminal a koraci pokretanja alata opisani u okviru [README.md](cppcheck/README.md).
 
 ### Zaključci
-Nakon pokretanja skripta `cppcheck_xml.sh dobijen je detaljan izveštaj u okviru kog možemo videti sva upozorenja sa tačnim mestom u kodu gde su upozorenja pronađena. Izveštaj je prikazan na slici ispod:
+Nakon pokretanja skripta `cppcheck_xml.sh` dobijen je detaljan izveštaj u okviru kog možemo videti sva upozorenja sa tačnim mestom u kodu gde su upozorenja pronađena. Izveštaj je prikazan na slici ispod:
 
 ![](cppcheck/pictures/statistic1.png)
 ![](cppcheck/pictures/statistic2.png)
 
-Jedno od upozorenja odnosi se na funkcije i promenljive koje su deklarisanje ali nisu korišćene.
+Jedno od upozorenja odnosi se na funkcije i promenljive koje su deklarisane ali nisu korišćene.
 
 ![](cppcheck/pictures/unused_func_and_var.png)
 
